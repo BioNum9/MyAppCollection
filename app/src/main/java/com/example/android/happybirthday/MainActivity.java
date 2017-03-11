@@ -5,69 +5,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    //private RelativeLayout relativeLayout;
-
-    private LinearLayout linearLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //根据ID获取button
+        Button clickButton = (Button) findViewById(R.id.button);
+        clickButton.setOnClickListener(new btnListener(clickButton));
 
-        //获得控件对象
+        //根据ID获取button
+        Button clickButton2 = (Button) findViewById(R.id.button2);
+        clickButton2.setOnClickListener(new btnListener(clickButton2));
 
-        linearLayout = (LinearLayout)findViewById(R.id.linearLayout);
+        //根据ID获取button
+        Button clickButton3 = (Button) findViewById(R.id.button3);
+        clickButton3.setOnClickListener(new btnListener(clickButton3));
 
+        //根据ID获取button
+        Button clickButton4 = (Button) findViewById(R.id.button4);
+        clickButton4.setOnClickListener(new btnListener(clickButton4));
 
-
-        //利用循环添加5个按钮
-
-        for(int i = 0; i < 5; i ++){
-            //创建一个Button对象
-            Button btn = new Button(this);
-            //设置对象的id
-            btn.setId(i);
-            if(i == 0){
-                btn.setText("热门电影");
-            }else if(i == 1){
-                btn.setText("热门电影1");
-            }else if(i == 2){
-                btn.setText("热门电影2");
-            }else if(i == 3){
-                btn.setText("热门电影3");
-            }else if(i == 4){
-                btn.setText("热门电影4");
-            }
-
-//            btn.setOnClickListener(new View.OnClickListener() {
-//               public void onClick(View v) {
-//                   Toast toast = Toast.makeText(MainActivity.this, "这是一个普通的Toast!", Toast.LENGTH_SHORT);
-//                   toast.show();
-//               }
-//            });
-
-            btn.setOnClickListener(new btnListener(btn));
-
-            linearLayout.addView(btn);
-
-        }
-
-
-
-
-//       Button clickButton = (Button) findViewById(R.id.button1);
-//
-//       clickButton.setOnClickListener(new View.OnClickListener() {
-//               public void onClick(View v) {
-//                   Toast toast = Toast.makeText(MainActivity.this, "这是一个普通的Toast!", Toast.LENGTH_SHORT);
-//                   toast.show();
-//               }
-//
-//       });
+        //根据ID获取button
+        Button clickButton5 = (Button) findViewById(R.id.button5);
+        clickButton5.setOnClickListener(new btnListener(clickButton5));
 
     }
 
@@ -85,7 +50,13 @@ public class MainActivity extends AppCompatActivity {
         }
         public void onClick(View v)
         {
-            btn.setText("Welcome!");//改变按钮的名字
+            Toast toast = Toast.makeText(MainActivity.this, "启动应用："+btn.getText(), Toast.LENGTH_SHORT);
+            toast.show();
         }
     }
+
+
+
+//       Button clickButton = (Button) findViewById(R.id.button1);
+
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -16,14 +16,67 @@
         android:layout_height="wrap_content"
         android:text="纳米学位应用"
 
-        android:id="@+id/textView2"
+        android:id="@+id/textView1"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="热门电影"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1"
+        android:layout_marginTop="12dp"
+        android:id="@+id/button" />
 
-</RelativeLayout> -->
+    <Button
+        android:text="股票雄鹰"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    <Button
+        android:text="XYZ阅读器"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+
+    <Button
+        android:text="最新闻"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
+
+    <Button
+        android:text="毕业设计"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button4"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
+
+
+
+</RelativeLayout>
+
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:scrollbars="vertical"
     android:fadingEdge="vertical"
     android:layout_width="fill_parent"
@@ -32,7 +85,7 @@
 
 
 
-<LinearLayout
+<RelativeLayout
     android:id="@+id/linearLayout"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -49,6 +102,6 @@
         android:layout_centerHorizontal="true" />
 
 
-</LinearLayout>
-    </ScrollView>
+</RelativeLayout>
+    </ScrollView> -->
 

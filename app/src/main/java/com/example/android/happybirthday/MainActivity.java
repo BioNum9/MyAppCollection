@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         clickButton5.setOnClickListener(new btnListener(clickButton5));
 
     }
-
+    // 下面的监听器类我参照了该网页的代码 ：http://www.cnblogs.com/shanhaiyang/archive/2011/07/18/2109398.html
     class btnListener implements OnClickListener
     {
         //定义一个 Button 类型的变量
@@ -55,8 +55,5 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
-
-//       Button clickButton = (Button) findViewById(R.id.button1);
 
 }

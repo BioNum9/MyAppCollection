@@ -76,32 +76,4 @@
 
 </RelativeLayout>
 
-<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:scrollbars="vertical"
-    android:fadingEdge="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-
-
-
-<RelativeLayout
-    android:id="@+id/linearLayout"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="纳米学位应用"
-
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-
-</RelativeLayout>
-    </ScrollView> -->
 

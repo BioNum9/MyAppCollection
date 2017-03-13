@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'Google Inc.:Google APIs:24'
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 23
+    buildToolsVersion '24.0.3'
     defaultConfig {
         applicationId "com.example.android.happybirthday"
-        minSdkVersion 15
+        minSdkVersion 17
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"

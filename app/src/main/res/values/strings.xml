@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">我的应用作品集</string>
+    <string name="my_nanodegree_apps">纳米学位应用</string>
+    <string name="button_name">热门电影</string>
+    <string name="button2_name">股票雄鹰</string>
+    <string name="button3_name">XYZ阅读器</string>
+    <string name="button4_name">最新闻</string>
+    <string name="button5_name">毕业设计</string>
 </resources>

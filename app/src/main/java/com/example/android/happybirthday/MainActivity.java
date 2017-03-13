@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     // 下面的监听器类我参照了该网页的代码 ：http://www.cnblogs.com/shanhaiyang/archive/2011/07/18/2109398.html
-    class btnListener implements OnClickListener
-    {
+    class btnListener implements OnClickListener{
         //定义一个 Button 类型的变量
         private Button btn;
 
@@ -48,12 +47,10 @@ public class MainActivity extends AppCompatActivity {
         {
             this.btn = btn;//将引用变量传递给实体变量
         }
-        public void onClick(View v)
-        {
+        public void onClick(View v){
             Toast toast = Toast.makeText(MainActivity.this, "启动应用："+btn.getText(), Toast.LENGTH_SHORT);
             toast.show();
         }
     }
-
 
 }

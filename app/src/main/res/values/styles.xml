@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/textView1</item>
+        <item name="android:layout_alignStart">@+id/textView1</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
 </resources>
